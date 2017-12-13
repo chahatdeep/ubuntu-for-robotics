@@ -1,6 +1,11 @@
 # ubuntu-setup
 This repository is for setting-up cuda-8.0, nvidia-384/387 driver, OpenCV-3.3, ROS Kinetic, Tensorflow1.4, MATLAB R2017b
 
+## Order of Installation:
+- Cuda
+- OpenCV
+- ROS
+
 First do:
 ```
 sudo apt update
@@ -9,7 +14,7 @@ sudo apt upgrade
 
 ### nvidia-384 setup:
 `sudo apt install nvidia-smi nvidia-384`
-
+***
 ### Cuda 8-0 setup:
 - Download Cuda for Ubuntu 16.04 x86_64: (deb-local)
 https://developer.nvidia.com/cuda-80-ga2-download-archive
@@ -32,3 +37,7 @@ nvcc --version
 echo 'export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}' >> ~/.bashrc
 ``
 - Check `nvcc --version` again (on a fresh terminal window). It should show you `cuda-8.0`.
+***
+
+### Installation OpenCV-3.3:
+``bash install_opencv.sh``
