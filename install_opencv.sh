@@ -3,10 +3,12 @@
 version="$(wget -q -O - http://sourceforge.net/projects/opencvlibrary/files/opencv-unix | egrep -m1 -o '\"[0-9](\.[0-9]+)+' | cut -c2-)"
 echo "Installing OpenCV: " $version
 echo " in" $PWD
-echo "Tested only on Ubuntu-16.04 (MATE). It might not work with any other distro."
+echo "Tested only on Ubuntu-16.04. It might not work with any other distro."
 read -p "Press <ENTER> to continue"
 mkdir OpenCV
 cd OpenCV
+echo "NOTE: Uninstallating ffmpeg and x264. They have issues with OpenCV."
+read -p "Press <ENTER> to continue"
 echo "Removing any pre-installed ffmpeg and x264"
 sudo apt-get -qq remove ffmpeg x264 libx264-dev
 echo "Installing Dependenices"
