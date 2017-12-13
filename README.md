@@ -12,10 +12,13 @@ sudo apt update
 sudo apt upgrade
 ```
 
-### nvidia-384 setup:
+***
+
+## nvidia-384 setup:
 `sudo apt install nvidia-smi nvidia-384`
 ***
-### Cuda 8-0 setup:
+
+## Cuda 8-0 setup:
 - Download Cuda for Ubuntu 16.04 x86_64: (deb-local)
 https://developer.nvidia.com/cuda-80-ga2-download-archive
 or simply do, `wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda-repo-ubuntu1604-8-0-local-ga2_8.0.61-1_amd64-deb`
@@ -39,10 +42,19 @@ echo 'export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}' >> ~/.bashrc
 - Check `nvcc --version` again (on a fresh terminal window). It should show you `cuda-8.0`.
 ***
 
-### Installation OpenCV-3.3:
+## Install OpenCV-3.3:
 ``bash install_opencv.sh``
 
-### Download and install `cudnn` for cuda-8.0 (cudnn-6.0) is not supported for cudnn-5.1:
+***
+## Install ROS-Kinetic-base:
+``bash install_ros.sh``
+***
+
+## Install Tensorflow:
+``bash install_tf.sh``
+***
+
+## Download and install `cudnn` for cuda-8.0 (cudnn-6.0) is not supported for cudnn-5.1:
 - Download [cudnn-5.1](https://drive.google.com/open?id=1PHPS2EdUyIt9GSsidKA92OeNiaYhFJqM)
 - `tar -zxvf cudnn-8.0-linux-x64-v5.1.tgz`
 - Check the file: 
@@ -78,3 +90,5 @@ lrwxrwxrwx 1 root root       18 May 24 09:24 libcudnn.so.5 -> libcudnn.so.5.1.10
 `sudo cp cudnn.h /usr/local/cuda-8.0/include/`
 
 - [Reference](https://stackoverflow.com/questions/42013316/after-building-tensorflow-from-source-seeing-libcudart-so-and-libcudnn-errors)
+
+***
