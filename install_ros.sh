@@ -4,7 +4,7 @@
 
 echo "You are using"
 echo $(lsb_release -d)
-echo "This script is build for Ubuntu 16.04."
+echo "This script is build for Ubuntu 16.04.x LTS"
 read -p "Do you want to continue? If yes, press <ENTER>."
 echo "Setup up the source list"
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
