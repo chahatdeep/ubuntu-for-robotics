@@ -41,3 +41,7 @@ echo 'export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}' >> ~/.bashrc
 
 ### Installation OpenCV-3.3:
 ``bash install_opencv.sh``
+
+### Download and install `cudnn`:
+- Download [cudnn-6.0](https://drive.google.com/open?id=1PHPS2EdUyIt9GSsidKA92OeNiaYhFJqM0)
+- 
