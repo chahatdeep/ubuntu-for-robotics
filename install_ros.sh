@@ -2,8 +2,10 @@
 # Installation script to install ROS-Kinetic-base in Ubuntu 16.04
 # Configure your Ubuntu repositories: Configure your Ubuntu repositories to allow "restricted," "universe," and "multiverse."
 
-echo "Are you using Ubuntu 16.04?"
-read -p "If yes, press <ENTER> to continue."
+echo "You are using"
+echo $(lsb_release -d)
+echo "This script is build for Ubuntu 16.04."
+read -p "Do you want to continue? If yes, press <ENTER>."
 echo "Setup up the source list"
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 
