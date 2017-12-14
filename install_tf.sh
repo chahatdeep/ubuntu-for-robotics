@@ -2,7 +2,14 @@
 # Requires Python-2.7
 # Requires cudnn
 
+
 sudo apt-get install python-pip
+
+echo "Cleaning the previous tensorflow installations"
+sleep 1
+sudo -H pip uninstall tensorflow
+sudo -H pip uninstall tensorflow-gpu
+
 sudo pip install tensorflow-gpu
 echo "Installed tf-gpu."
 echo "Updating tf-0.xx to tf-1.4..." && sleep 2
@@ -13,11 +20,19 @@ echo "Updating tf-0.xx to tf-1.4..." && sleep 2
 # sudo pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.4.0-cp27-cp34m-linux_x86_64.whl
 
 # Updating tf-gpu to 1.4:
-sudo pip install --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.4.0-cp27-none-linux_x86_64.whl
+#sudo pip install --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.4.0-cp27-none-linux_x86_64.whl
+
+# tf-gpu 1.2.1 (NEEDED for Flownet2); else Make error.
+sudo pip install --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.2.1-cp27-none-linux_x86_64.whl
+
 
 echo "Updating tensorflow to the latest version"
 pip install --upgrade tensorflow # Removes libcudnn.so.6 bug.
 sudo apt-get install libcupti-dev
+
+echo "Removing tf-1.4"
+sudo pip uninstall tensorflow
+
 
 ############ FALLBACK/ISSUES ####################
 # Fix: 
