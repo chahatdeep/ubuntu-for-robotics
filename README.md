@@ -54,7 +54,7 @@ echo 'export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}' >> ~/.bashrc
 ``bash install_tf.sh``
 ***
 
-## Download and install `cudnn` for cuda-8.0 (cudnn-6.0) is not supported for cudnn-5.1:
+## Download and install `cudnn` for cuda-8.0 with cudnn-5.1 (cudnn-5.1 is not supported for tf):
 - Download [cudnn-5.1](https://drive.google.com/open?id=1PHPS2EdUyIt9GSsidKA92OeNiaYhFJqM)
 - `tar -zxvf cudnn-8.0-linux-x64-v5.1.tgz`
 - Check the file: 
