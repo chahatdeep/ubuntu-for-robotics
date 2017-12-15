@@ -2,7 +2,7 @@
 This repository is for setting-up cuda-8.0, nvidia-384/387 driver, OpenCV-3.3, ROS Kinetic, Tensorflow1.2.1 maintained for settting-up the step-zero Deep Learning framework (Tensorflow), especially for Robotics application.
 
 *Install fresh ubuntu 16.04 (x86-64) and follow:*
-*(Tested on Intel i7-6700K, 32GB DDR4 RAM, TITAN X)*
+*(Tested on Intel i7-6700K, 32GB DDR4 RAM, nvidia Titan X)*
 
 ## Order of Installation:
 - Cuda
