@@ -1,5 +1,5 @@
 # ubuntu-setup
-This repository is for setting-up cuda-8.0, nvidia-384/387 driver, OpenCV-3.3, ROS Kinetic, Tensorflow1.4, MATLAB R2017b
+This repository is for setting-up cuda-8.0, nvidia-384/387 driver, OpenCV-3.3, ROS Kinetic, Tensorflow1.2.1 maintained for settting-up the step-zero Deep Learning framework (Tensorflow), especially for Robotics application.
 
 ## Order of Installation:
 - Cuda
@@ -54,75 +54,4 @@ echo 'export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}' >> ~/.bashrc
 ``bash install_tf.sh``
 ***
 
-## Download and install `cudnn` for cuda-8.0 with cudnn-5.1 (cudnn-5.1 is not supported for tf):
-- Download [cudnn-5.1](https://drive.google.com/open?id=1PHPS2EdUyIt9GSsidKA92OeNiaYhFJqM)
-- `tar -zxvf cudnn-8.0-linux-x64-v5.1.tgz`
-- Check the file: 
-``
-cd cuda/lib64/
-ls -l
-``
-- You should see something like this:
-```
-total 150908
-lrwxrwxrwx 1 doom doom       13 Nov  7  2016 libcudnn.so -> libcudnn.so.5
-lrwxrwxrwx 1 doom doom       18 Nov  7  2016 libcudnn.so.5 -> libcudnn.so.5.1.10
--rwxr-xr-x 1 doom doom 84163560 Nov  7  2016 libcudnn.so.5.1.10
--rw-r--r-- 1 doom doom 70364814 Nov  7  2016 libcudnn_static.a
-```
-- Here you will see 2 symbolic link files, and just copy `libcudnn.so.5.1.10` and `libcudnn_static.a` to `/usr/local/cuda-8.0/lib64`
-- Make symbolic link files:
-```
-cd /usr/local/cuda-8.0/lib64/
-sudo ln -s libcudnn.so.5.1.10 libcudnn.so.5
-sudo ln -s libcudnn.so.5 libcudnn.so
-```
-
-- Check for libcudnn: `ls -l libcudnn*`
-You should see:
-```
-lrwxrwxrwx 1 root root       13 May 24 09:24 libcudnn.so -> libcudnn.so.5
-lrwxrwxrwx 1 root root       18 May 24 09:24 libcudnn.so.5 -> libcudnn.so.5.1.10
--rwxr-xr-x 1 root root 84163560 May 24 09:23 libcudnn.so.5.1.10
--rw-r--r-- 1 root root 70364814 May 24 09:23 libcudnn_static.a
-```
-- Copy `cudnn.h` in include directory to `/usr/local/cuda/include`
-`sudo cp cudnn.h /usr/local/cuda-8.0/include/`
-
-- [Reference](https://stackoverflow.com/questions/42013316/after-building-tensorflow-from-source-seeing-libcudart-so-and-libcudnn-errors)
-
-***
-
-
-
-
-/usr/local/lib/python2.7/dist-packages/tensorflow/include/tensorflow/stream_executor/cuda/cuda_config.h:
-
-/* Copyright 2015 The TensorFlow Authors. All Rights Reserved.
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-==============================================================================*/
-
-// DO NOT EDIT: automatically generated file
-#ifndef CUDA_CUDA_CONFIG_H_
-#define CUDA_CUDA_CONFIG_H_
-
-#define TF_CUDA_CAPABILITIES CudaVersion("3.0")
-
-#define TF_CUDA_VERSION "8.0"
-#define TF_CUDNN_VERSION "6"
-
-#define TF_CUDA_TOOLKIT_PATH "/usr/local/cuda-8.0"
-
-#endif  // CUDA_CUDA_CONFIG_H_
 
