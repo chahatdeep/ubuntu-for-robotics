@@ -62,3 +62,7 @@ echo 'export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}' >> ~/.bashrc
 ## Install CuDNN:
 ``bash install_cudnn.sh``
 ***
+
+
+## FAQ(s):
+- [Installing cuda for Quadro series GPU](https://github.com/chahatdeep/ubuntu-for-robotics/issues/3)
