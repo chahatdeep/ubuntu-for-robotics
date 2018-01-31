@@ -1,13 +1,13 @@
-# Welcome to the Jetson™ Trashformers wiki!
+# Welcome to the Jetson™ TX2 Setup! 
+### Recommended host machine is freshly installed 16.04 LTS. DO NOT USE Ubuntu 14.04.
 
-Here, one can find setup guides for a Trashformer robot and other documentation.
+1. [Hardware Setup Guide](Hardware)
 
-[Main Project & ReadMe](https://github.com/NVIDIA-Jetson/jetson-trashformers)
+2. [Jetson Carrier Board Flashing Guide](Jetson%E2%84%A2-Flashing-and-Setup-Guide-for-a-Connect-Tech-Carrier-Board)
 
-[Hardware Setup Guide](https://github.com/NVIDIA-Jetson/jetson-trashformers/wiki/Hardware)
+3. [Reconfiguring the Jetson Kernel to Support USB AMC](Re-configuring-the-Jetson-TX2-Kernel)
 
-[Jetson Carrier Board Flashing Guide](https://github.com/NVIDIA-Jetson/jetson-trashformers/wiki/Jetson%E2%84%A2-Flashing-and-Setup-Guide-for-a-Connect-Tech-Carrier-Board)
-
-[Reconfiguring the Jetson Kernel to Support USB AMC](https://github.com/NVIDIA-Jetson/jetson-trashformers/wiki/Re-configuring-the-Jetson-TX2-Kernel)
-
-[Single and Multi-Class Object Detection](https://github.com/NVIDIA-Jetson/jetson-trashformers/wiki/Single-and-Multi-Class-Object-Detection)
+**
+Extras:
+- [Single and Multi-Class Object Detection](Single-and-Multi-Class-Object-Detection)
+- [Reference](https://github.com/NVIDIA-Jetson/jetson-trashformers)
