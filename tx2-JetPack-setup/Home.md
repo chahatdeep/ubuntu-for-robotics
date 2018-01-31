@@ -8,6 +8,7 @@
 3. [Reconfiguring the Jetson Kernel to Support USB AMC](Re-configuring-the-Jetson-TX2-Kernel)
 
 **
+
 Extras:
 - [Single and Multi-Class Object Detection](Single-and-Multi-Class-Object-Detection)
 - [Reference](https://github.com/NVIDIA-Jetson/jetson-trashformers)
