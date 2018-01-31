@@ -3,7 +3,7 @@
 
 1. [Hardware Setup Guide](Hardware.md)
 
-2. [Jetson Carrier Board Flashing Guide](Jetson%E2%84%A2-Flashing-and-Setup-Guide-for-a-Connect-Tech-Carrier-Board.md)
+2. [Jetson Carrier Board Flashing Guide](Flashing-and-Setup-Guide-for-a-Connect-Tech-Carrier-Board.md)
 
 3. [Reconfiguring the Jetson Kernel to Support USB AMC](Re-configuring-the-Jetson-TX2-Kernel.md)
 
