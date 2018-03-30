@@ -7,6 +7,7 @@ sudo apt-get upgrade
 ```
 
 2. Install Dependencies:
+```
 sudo apt-get install -y build-essential cmake gfortran git pkg-config 
 sudo apt-get install -y python-dev software-properties-common wget vim
 sudo apt-get autoremove
