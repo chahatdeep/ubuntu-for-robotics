@@ -47,6 +47,7 @@ echo 'export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}' >> ~/.bashrc
 - Check `nvcc --version` again (on a fresh terminal window). It should show you `cuda-8.0`.
 ***
 
+
 ## Install OpenCV-3.3:
 ``bash install_opencv.sh``
 
