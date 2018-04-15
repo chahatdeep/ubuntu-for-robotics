@@ -17,6 +17,13 @@
 
 ***
 
+- To install pyTorch, do:
+```
+sudo bash ./install_pytorch_tx2.sh
+```
+
+*Note: `pyTorch` installation on NVIDIA TX2 takes about an hour to install.*
+
 - Check GPU/RAM/CPU Stats: 
 ```
 sudo ~/tegrastats
