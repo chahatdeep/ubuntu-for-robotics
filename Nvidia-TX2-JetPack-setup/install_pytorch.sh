@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# pyTorch install script for NVIDIA Jetson TX1/TX2,
+# pyTorch install script ONLY for NVIDIA Jetson TX2- Ubuntu 16.04-L4T, doesn't work on NVIDIA TX1
 # from a fresh flashing of JetPack 2.3.1 / JetPack 3.0 / JetPack 3.1
 #
 # for the full source, see jetson-reinforcement repo:
