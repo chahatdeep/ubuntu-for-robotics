@@ -51,9 +51,51 @@ sudo ./flash.sh orbitty mmcblk0p1 # It should be mmcblk0p1 everytime unless you 
 
 (Replacing "orbitty" with whichever Connect Tech carrier board you have)
 
-Wait for the process to finish and reboot
+Wait for the process to finish and reboot.
+
+Expect Outputs like [this](https://github.com/chahatdeep/ubuntu-for-robotics/blob/master/Nvidia-TX2-JetPack-setup/Terminal-Output.md)
+
+Ubuntu will be installed on the TX2 and it'll reboot with Unity interface on Ubuntu-16.04-L4T
+
+Mouse and Keyboard should work now!!!
 
 ### Installing CUDA and Other Dependencies
+
+Connect an HDMI display and a keyboard and mouse to the Orbitty carrier board.
+Boot unto Ubuntu using the following credentials:
+Username: nvidia
+Password: nvidia
+Connect the Jetson to your network via Ethernet (recommended) or wifi
+Write down the IP address of the Jetson
+ifconfig
+Leave the Jetson at this point, do NOT reboot to recovery
+On the host computer, navigate to the JetPack install directory and launch JetPack
+bash ./JetPack-L4T-XX-linux-x64.run
+
+(Replace the XX with the your version such as 3.1)
+
+
+
+
+
+Enter your admin password
+
+In the Component Manager window, make sure "Host-Ubuntu" is set to "no action"
+
+Change "Flash OS Image to Target" to "no action"
+
+Only "Install on Target" should be selected 
+
+--[Image here]--
+
+Accept License Terms
+
+Do `ifconfig` and check Device IP of TX2 machine! It should be the `inet addr` under `eth0` if you are connected to Ethernet or under `wlan0` if you are connected to Wireless LAN. (For example: `192.168.0.28`)
+Enter username and password as `nvidia`.
+
+Enter the IP address you found earlier and your Jetson credentials (default nvidia:nvidia) 
+
+
 
 
 
