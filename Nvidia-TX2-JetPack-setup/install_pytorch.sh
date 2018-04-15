@@ -29,7 +29,7 @@ sudo pip install -r requirements.txt
 sudo apt install cmake
 
 # Develop Mode:
-python setup.py build_deps
+python setup.py build_deps # Will take about an hour on TX2
 sudo python setup.py develop
 
 # Install Mode:  (substitute for Develop Mode commands)
