@@ -114,7 +114,8 @@ Detailed info:
 
 You need to install `sshpass`, do `sudo apt install sshpass` on the host machine.
 
-Now, click on Next and let it install
+Now, click on Next and let it install.
+*Note: You might need to enter the password in the newly opened terminal.*
 
 
 
