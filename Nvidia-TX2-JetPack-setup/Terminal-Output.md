@@ -4,7 +4,7 @@
 sudo ./install.sh
 ```
 
-```
+```sh
 chahatdeep@archahat:~/JetPack-L4T/64_TX2/Linux_for_Tegra_tx2/CTI-L4T$ sudo ./install.sh 
 [sudo] password for chahatdeep: 
   Usage: ./install.sh 
@@ -67,7 +67,7 @@ CTI-L4T-V110 Installed!
 ```
 
 ***
-```
+```sh
 sudo ./flash.sh orbitty mmcblk0p1
 ```
 
