@@ -21,9 +21,12 @@ git clone http://github.com/pytorch/pytorch
 cd pytorch
 git submodule update --init
 
-# install prereqs
+# Install prereqs
 sudo pip install -U setuptools
 sudo pip install -r requirements.txt
+
+# Install cmake:
+sudo apt install cmake
 
 # Develop Mode:
 python setup.py build_deps
