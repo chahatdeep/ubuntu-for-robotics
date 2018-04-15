@@ -1,22 +1,25 @@
 #!/bin/bash
+# Takes about 100 mins to install pyTorch on a TX2
 #
 # pyTorch install script ONLY for NVIDIA Jetson TX2- Ubuntu 16.04-L4T, doesn't work on NVIDIA TX1
 # from a fresh flashing of JetPack 2.3.1 / JetPack 3.0 / JetPack 3.1
 #
 # for the full source, see jetson-reinforcement repo:
-#   https://github.com/dusty-nv/jetson-reinforcement/blob/master/CMakePreBuild.sh
+# https://github.com/dusty-nv/jetson-reinforcement/blob/master/CMakePreBuild.sh
 #
-# note:  pyTorch documentation calls for use of Anaconda,
+# Note:  pyTorch documentation calls for use of Anaconda,
 #        however Anaconda isn't available for aarch64.
 #        Instead, we install directly from source using setup.py
+
+# Install Python-pip:
 sudo apt-get install python-pip
 
-# upgrade pip
+# Upgrade pip:
 pip install -U pip
 pip --version
 # pip 9.0.1 from /home/ubuntu/.local/lib/python2.7/site-packages (python 2.7)
 
-# clone pyTorch repo
+# Clone pyTorch repo:
 git clone http://github.com/pytorch/pytorch
 cd pytorch
 git submodule update --init
