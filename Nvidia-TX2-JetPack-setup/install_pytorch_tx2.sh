@@ -32,7 +32,7 @@ sudo apt install cmake
 python setup.py build_deps # Will take about an hour on TX2
 sudo python setup.py develop
 
-# Install Mode:  (substitute for Develop Mode commands)
+# Install Mode:  (substitute for Develop Mode commands) # Will take about 30 mins on TX2
 sudo python setup.py install
 
 # Install TorchVision:
