@@ -61,6 +61,13 @@ Mouse and Keyboard should work now!!!
 
 ### Installing CUDA and Other Dependencies
 
+On TX2, do 
+```
+sudo apt update
+sudo apt upgrade
+```
+
+
 Connect an HDMI display and a keyboard and mouse to the Orbitty carrier board.
 Boot unto Ubuntu using the following credentials:
 Username: nvidia
@@ -96,7 +103,18 @@ Enter username and password as `nvidia`.
 Enter the IP address you found earlier and your Jetson credentials (default nvidia:nvidia) 
 
 
+If you get error like this:
+```
+Return Code: 1
+Error: Cannot connect to device with given information. Please check your input and try again.
 
+Detailed info: 
+/bin/bash: sshpass: command not found
+```
+
+You need to install `sshpass`, do `sudo apt install sshpass` on the host machine.
+
+Now, click on Next and let it install
 
 
 
