@@ -119,4 +119,9 @@ Now, click on Next and let it install.
 
 
 
+***
+
+
+- Check CUDA version using `nvcc --version`. It should be `Cuda compilation tools, release 8.0, v8.0.72`
+- Check opencv version using `python -c 'import cv2; print(cv2.__version__)'`
 
