@@ -12,3 +12,21 @@
 ### Extras:
 - [Single and Multi-Class Object Detection](Single-and-Multi-Class-Object-Detection.md)
 - [Reference](https://github.com/NVIDIA-Jetson/jetson-trashformers)
+
+
+
+***
+
+- Check GPU/RAM/CPU Stats: 
+```
+sudo ~/tegrastats
+```
+`tegrastats` Legend:
+```
+EMC – memory controller
+AVP – audio/video processor
+VDE – video decoder engine
+GR3D – GPU
+```
+
+*Note: `nvidia-smi` is not available for Jetson platform.*
