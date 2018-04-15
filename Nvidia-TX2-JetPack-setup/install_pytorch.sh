@@ -33,15 +33,13 @@ python setup.py build_deps # Will take about an hour on TX2
 sudo python setup.py develop
 
 # Install Mode:  (substitute for Develop Mode commands)
-#sudo python setup.py install
+sudo python setup.py install
 
-# Verify CUDA (from python interactive terminal)
-# import torch
-# print(torch.__version__)
-# print(torch.cuda.is_available())
-# a = torch.cuda.FloatTensor(2)
-# print(a)
-# b = torch.randn(2).cuda()
-# print(b)
-# c = a + b
-# print(c)
+# Install TorchVision:
+sudo apt-get install libjpeg-dev zlib1g-dev libpng-dev python-matplotlib
+sudo -H pip install Pillow
+sudo -H pip install torchvision
+
+# Verify CUDA (If this works, Torch is successfully installed)
+python -c 'import torch; print(torch.__version__); print(torch.cuda.is_available()); a = torch.cuda.FloatTensor(2); \
+print(a); b = torch.randn(2).cuda(); print(b); c = a + b; print(c)'
