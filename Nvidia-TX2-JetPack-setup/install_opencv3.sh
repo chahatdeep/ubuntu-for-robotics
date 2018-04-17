@@ -1,5 +1,13 @@
 #!/bin/bash
+# References:
+# https://docs.opencv.org/3.2.0/d6/d15/tutorial_building_tegra_cuda.html
+# https://github.com/jetsonhacks/buildOpenCVTX2
 
+
+# Remove OpenCV-2.4
+sudo apt-get purge libopencv*
+
+# Install OpenCV-3.3
 sudo apt-get install -y \
     libglew-dev \
     libtiff5-dev \
@@ -36,7 +44,7 @@ cd ../opencv/
 mkdir build
 cd build
 
-# Jetson TX2 
+# CMAKE:
 cmake \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr \
@@ -72,3 +80,5 @@ cmake \
 
 # Consider using all 6 cores; $ sudo nvpmodel -m 2 or $ sudo nvpmodel -m 0
 make -j4
+
+sudo make install
