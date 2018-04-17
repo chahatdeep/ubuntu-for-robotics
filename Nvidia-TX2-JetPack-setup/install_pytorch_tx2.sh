@@ -12,6 +12,16 @@
 #        however Anaconda isn't available for aarch64.
 #        Instead, we install directly from source using setup.py
 
+
+RED='\033[0;31m' # Red
+NC='\033[0m' # No Color
+
+echo Current Path is: $PWD
+printf "${RED}Installing in $PWD. Installing in internal drive is not recommended. Please install in the SD Card. \n Do you want to continue?${NC}"
+read answer
+
+if [ $answer -eq "Y"]; then
+
 # Choose Python version:
 echo "Choose Python(2.7 or 3) Version: [2,3] "
 read ver 
@@ -100,4 +110,8 @@ print(a); b = torch.randn(2).cuda(); print(b); c = a + b; print(c)'
 
 else
 	echo "Invalid version, choose 2 or 3. Re-run the script";
+fi
+
+else
+	echo "Change path somewhere in SD card (highly recommended). \n You can still install pytorch in any other folder but is not recommended."
 fi
