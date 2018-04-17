@@ -23,7 +23,7 @@ read answer
 if [ $answer -eq "Y"]; then
 
 # Choose Python version:
-echo "Choose Python(2.7 or 3) Version: [2,3] "
+printf "${RED}Choose Python(2.7 or 3) Version: [2,3] ${NC}"
 read ver 
 
 ########################## For python 2 ##########################
