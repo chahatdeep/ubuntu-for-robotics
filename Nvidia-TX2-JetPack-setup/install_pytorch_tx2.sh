@@ -51,7 +51,7 @@ sudo -H pip install torchvision
 
 # Verify CUDA (If this works, Torch is successfully installed)
 python -c 'import torch; print(torch.__version__); print(torch.cuda.is_available()); a = torch.cuda.FloatTensor(2); \
-print(a); b = torch.randn(2).cuda(); print(b); c = a + b; print(c)'
+print(a); b = torch.randn(2).cuda(); print(b); c = a + b; print(c)';
 
 # Python 3:  
 
@@ -90,7 +90,7 @@ sudo -H pip3 install torchvision
 
 # Verify CUDA (If this works, Torch is successfully installed)
 python3 -c 'import torch; print(torch.__version__); print(torch.cuda.is_available()); a = torch.cuda.FloatTensor(2); \
-print(a); b = torch.randn(2).cuda(); print(b); c = a + b; print(c)'
+print(a); b = torch.randn(2).cuda(); print(b); c = a + b; print(c)';
 
 *) echo "Invalid version, choose 2 or 3. Re-run the script";;
 esac
