@@ -1,6 +1,4 @@
 #!/bin/bash
-# License: MIT. See license file in root directory
-# Copyright(c) JetsonHacks (2017)
 
 sudo apt-get install -y \
     libglew-dev \
@@ -37,6 +35,7 @@ git checkout -b v3.3.0 3.3.0
 cd ../opencv/
 mkdir build
 cd build
+
 # Jetson TX2 
 cmake \
     -DCMAKE_BUILD_TYPE=Release \
