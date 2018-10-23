@@ -21,6 +21,10 @@ export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ########################################################################################
 
+
+## OR ##
+
+
 # install cuDNN v7.3
 CUDNN_TAR_FILE="cudnn-9.0-linux-x64-v7.3.1.20.tgz"
 wget http://developer.download.nvidia.com/compute/redist/cudnn/v7.0/${CUDNN_TAR_FILE}
@@ -31,4 +35,5 @@ sudo chmod a+r /usr/local/cuda-9.0/lib64/libcudnn*
 
 # set environment variables
 export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
