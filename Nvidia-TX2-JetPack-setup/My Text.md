@@ -12,7 +12,7 @@
 bash ./JetPack-L4T-XX-linux-x64.run # Don't use sudo
 ```
 
-- Select TX2
+- Select `TX2`
 
 - Enter admin password
 
@@ -22,9 +22,9 @@ bash ./JetPack-L4T-XX-linux-x64.run # Don't use sudo
 
 *Do NOT finish flashing the target Jetson*
 
-- Kill Jetson Installer once you see this:
+<!-- - Kill Jetson Installer once you see this: -->
 
---[Image]--
+<!-- --[Image]-- -->
 
 ***
 
@@ -94,7 +94,7 @@ bash ./JetPack-L4T-XX-linux-x64.run
 
 - Only "Install on Target" should be selected 
 
---[Image here]--
+<!-- --[Image here]-- -->
 
 - Do `ifconfig` and check Device IP of TX2 machine! It should be the `inet addr` under `eth0` if you are connected to Ethernet or under `wlan0` if you are connected to Wireless LAN. (For example: `192.168.0.28`)
 - Enter username and password as `nvidia` (default).
