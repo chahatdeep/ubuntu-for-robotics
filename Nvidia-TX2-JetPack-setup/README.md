@@ -4,7 +4,7 @@
 #### If there is any error during the setup, please follow the below references.
 
 ***
-[Ref1](https://github.com/chahatdeep/ubuntu-for-robotics/blob/master/Nvidia-TX2-JetPack-setup/Flashing-and-Setup-Guide-for-a-Connect-Tech-Carrier-Board.md)
+[Ref1](https://github.com/chahatdeep/ubuntu-for-robotics/blob/master/Nvidia-TX2-JetPack-setup/Flashing-and-Setup-Guide-for-a-Connect-Tech-Carrier-Board.md) | 
 [Ref2](https://github.com/chahatdeep/ubuntu-for-robotics/blob/master/Nvidia-TX2-JetPack-setup/default.md)
 
 - Download the latest version of Nvidia JetPack (Jetson™ SDK) [here](https://developer.nvidia.com/embedded/jetpack)
