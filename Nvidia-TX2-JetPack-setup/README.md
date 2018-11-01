@@ -1,7 +1,9 @@
-# My TX2 Setup with Connect-Tech-Carrier-Board
+# TX2 Ubuntu 16.04.5 Setup with Connect-Tech-Carrier-Board
 
 ### Ubuntu 16.04 LTS recommended on the host computer!
 #### If there is any error during the setup, please follow the below references.
+
+### Note: The TX2 board setup is different for Connect Tech board as few of the drivers like USB doesn't work with the standard TX2 Ubuntu Setup
 
 ***
 [Ref1](https://github.com/chahatdeep/ubuntu-for-robotics/blob/master/Nvidia-TX2-JetPack-setup/Flashing-and-Setup-Guide-for-a-Connect-Tech-Carrier-Board.md) | 
