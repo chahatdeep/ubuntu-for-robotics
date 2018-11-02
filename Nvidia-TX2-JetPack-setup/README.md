@@ -1,13 +1,12 @@
 # TX2 Ubuntu 16.04-L4T Setup with Connect-Tech-Carrier-Board
 
 ### A freshly installed Ubuntu 16.04 LTS recommended on the host computer!
-#### If there is any error during the setup, please follow the below references.
+#### If there is any error during the setup, please follow these references: [Ref1](https://github.com/chahatdeep/ubuntu-for-robotics/blob/master/Nvidia-TX2-JetPack-setup/Flashing-and-Setup-Guide-for-a-Connect-Tech-Carrier-Board.md) | 
+[Ref2](https://github.com/chahatdeep/ubuntu-for-robotics/blob/master/Nvidia-TX2-JetPack-setup/default.md)
 
 ### Note: The TX2 board setup is different for Connect Tech board as few of the drivers like USB doesn't work with the standard TX2 Ubuntu Setup
 
 ***
-[Ref1](https://github.com/chahatdeep/ubuntu-for-robotics/blob/master/Nvidia-TX2-JetPack-setup/Flashing-and-Setup-Guide-for-a-Connect-Tech-Carrier-Board.md) | 
-[Ref2](https://github.com/chahatdeep/ubuntu-for-robotics/blob/master/Nvidia-TX2-JetPack-setup/default.md)
 
 - Download the latest version of Nvidia JetPack (Jetson™ SDK) [here](https://developer.nvidia.com/embedded/jetpack)
 
