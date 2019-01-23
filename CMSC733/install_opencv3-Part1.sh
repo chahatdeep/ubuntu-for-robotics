@@ -27,11 +27,20 @@ maxThreads=$(grep -c ^processor /proc/cpuinfo)
 echo Enter the number of CPU threads you want to use. FYI: You have $maxThreads CPU Threads.
 read nThreads
 
+# Try 1:
 cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D CUDA_GENERATION=Kepler ..
 # or try for cuda support:
 make -j$nThreads
-# if there is an error: cmake again with the following lines and then do make again:
+# ---------------------------------------------------------- #
+
+# Try 2:
+# if there is an error: delete the build folder, create a new one and try to cmake again with the following lines and then do make again:
 # cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local -D BUILD_TIFF=ON -D BUILD_EXAMPLES=ON -D CUDA_GENERATION=Auto -D BUILD_NEW_PYTHON_SUPPORT=ON  .. 
 # and then do make -j$nThreads
+# ---------------------------------------------------------- #
+
+# Try 3:
+# Alternatively, if that doesn't work
 # cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D WITH_V4L=ON -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=ON -D WITH_QT=OFF -D WITH_OPENGL=ON ..
+# and then do make -j$nThreads
 # ---------------------------------------------------------- #
