@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # version="$(wget -q -O - http://sourceforge.net/projects/opencvlibrary/files/opencv-unix | egrep -m1 -o '\"[0-9](\.[0-9]+)+' | cut -c2-)"
-version=3.4
+version=3.4.0
 echo "Installing OpenCV: " $version
 echo " in" $PWD
 echo "Tested only on Ubuntu-16.04. It might not work with any other distro."
