@@ -66,4 +66,4 @@ demo, cd to <b>gtksdl</b> and type <b>make run</b>.
 occurs in the OpenCV C++ examples, and no image is displayed.
 </ul>
 
-Credits: [simondlevy](https://github.com/simondlevy/m021v4l2)
+**Credits**: [simondlevy](https://github.com/simondlevy/m021v4l2)
