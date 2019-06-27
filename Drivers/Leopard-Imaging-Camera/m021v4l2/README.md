@@ -55,8 +55,8 @@ If you get errors about OpenCV or NumPy not being installed, you should make
 sure that they're installed now:
 
 ```
-  % sudo pip3 install numpy
-  % sudo pip3 install opencv-python
+sudo pip3 install numpy
+sudo pip3 install opencv-python
 ```
 
 To run the C++ OpenCV capture demo, cd to <b>opencv/cpp</b> and type <b>make
