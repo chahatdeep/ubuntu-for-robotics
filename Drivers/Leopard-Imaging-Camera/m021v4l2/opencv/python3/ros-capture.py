@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 '''
 capture.py : capture frames from Leopard Imaging LI-USB30-M021 camera and display them using OpenCV
