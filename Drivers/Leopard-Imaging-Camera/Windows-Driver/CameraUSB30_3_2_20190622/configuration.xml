@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Global>
+  <Camera>
+    <CameraDefaultMode>0</CameraDefaultMode>
+    <FocusProcDownSampling>YES</FocusProcDownSampling>
+  </Camera>
+  <RAWInterpolation>
+    <GammaEna>YES</GammaEna>
+    <GammaValue>1.0</GammaValue>
+    <RGBGainOffsetEna>YES</RGBGainOffsetEna>
+    <RGBGainOffset>512, 512, 512, 0, 0, 0</RGBGainOffset>
+    <RGB2RGBMatrixEna>YES</RGB2RGBMatrixEna>
+    <RGB2RGBMatrix>256, 0, 0, 0, 256, 0, 0, 0, 256</RGB2RGBMatrix>
+  </RAWInterpolation>
+  <Capture>
+    <CaptureNum>1</CaptureNum>
+    <CaptureBMP>YES</CaptureBMP>
+    <CaptureRAW>YES</CaptureRAW>
+  </Capture>
+  <Register>
+    <RegisterSetting>{OV10635:(0xffff,0xffff),(0xffff,0xffff)};{M031:(0xffff,0xffff),(0xffff,0xffff)}</RegisterSetting>
+  </Register>
+</Global>
