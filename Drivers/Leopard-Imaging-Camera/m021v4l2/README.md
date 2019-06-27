@@ -37,9 +37,9 @@ sudo python3 setup.py install
 #make cap
 ```
 
-- To run the **Python3** demo program, cd to <tt>opencv/python</tt> and do
+- To run the **Python2** demo program, cd to <tt>opencv/python</tt> and do
 ```
-sudo python2 setup.py install
+sudo python setup.py install
 ./run-capture
 ```
 
