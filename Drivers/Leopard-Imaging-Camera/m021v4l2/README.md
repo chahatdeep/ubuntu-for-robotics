@@ -44,6 +44,11 @@ sudo python setup.py install
 ```
 
 - To run on **ROS-Kinetic**, cd to <tt>opencv/python</tt> and do
+Install `ros-cv-bridge`:
+```
+sudo apt install ros-kinetic-cv-bridge 
+```
+
 ```
 ./ros-capture
 ```
