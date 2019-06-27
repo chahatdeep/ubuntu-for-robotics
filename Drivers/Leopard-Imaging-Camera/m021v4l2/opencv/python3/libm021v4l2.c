@@ -80,10 +80,20 @@ static struct PyMethodDef methods[] = {
 // Python3 version, adapted from
 //   https://stackoverflow.com/questions/28305731/compiler-cant-find-py-initmodule-is-it-deprecated-and-if-so-what-should-i
 
-PyMODINIT_FUNC initlibm021v4l2 (void)
+static struct PyModuleDef cModPyDem =
 {
-    (void)Py_InitModule("libm021v4l2", methods);
+    PyModuleDef_HEAD_INIT,
+    "libm021v4l2", // name of module
+    "",          // module documentation, may be NULL 
+    -1,          // size of per-interpreter state of the module, or -1 if the module keeps state in global variables. 
+    methods
+};
+
+PyMODINIT_FUNC PyInit_libm021v4l2 (void)
+{
+    PyMODINIT_FUNC retval = PyModule_Create(&cModPyDem);
     import_array();
+    return retval;
 }
 
 
