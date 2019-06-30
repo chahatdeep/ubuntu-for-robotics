@@ -1,0 +1,191 @@
+sudo apt install gparted
+sudo gparted
+cd /usr/local
+ls
+sudo rm -rf MATLAB
+cd /tmp/
+ls
+sudo rm -rf *
+ls
+rm mathworks_root.log*
+ranger
+sudo apt install ranger
+ranger
+sudo ranger
+sudo rm -rf tm*
+cd /usr/local/MATLAB/
+ls
+cd R2019a/
+ls
+cd bin/
+ls
+./matlab
+bg
+exit
+cd matlab_R2019a_glnxa64/
+ls
+sudo ./install 
+sudo poweroff 
+cheese 
+ls
+mkdir git_cloned
+cd git_cloned/
+git clone https://github.com/chahatdeep/ubuntu-for-robotics
+sudo apt install git
+sudo rm -rf /var/lib/dpkg/lock-frontend 
+sudo apt update 
+sudo apt upgrade 
+sudo rm -rf /var/lib/dpkg/lock*
+sudo apt upgrade 
+sudo apt update 
+sudo apt list --upgradable 
+sudo apt ugpr
+sudo apt upgrade 
+sudo apt install git
+git clone https://github.com/chahatdeep/ubuntu-for-robotics
+cd ubuntu-for-robotics/Drivers/
+ls
+cd Leopard-Imaging-Camera/m021v4l2/
+ls
+cd opencv/
+ls
+cd python
+ls
+sudo python setup.py install
+sudo apt install python-pip
+sudo -H pip install numpy
+sudo python setup.py install
+./run-capture.py 
+sudo apt install libopencv
+sudo apt install libopencv*
+sudo -H pip install opencv-python
+./run-capture.py 
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+sudo sh -c '. /etc/lsb-release && echo "deb http://mirror.umd.edu/packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list' 
+wget https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -O - | sudo apt-key add - 
+sudo apt-get update 
+sudo apt install ros-kinetic-ros-base 
+ls
+sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
+sudo apt-get update
+sudo rosdep init
+rosdep update
+echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+sudo apt-get install python-rosinstall
+sudo apt install rviz 
+ls
+./run-capture.py 
+./ros-capture.py 
+sudo apt install ros-kinetic-cv-bridge 
+./ros-capture.py 
+printenv | grep ROS
+./ros-capture.py 
+roscore 
+rosrun rviz rviz
+sudo apt install ros-kinetic-rviz
+rosrun rviz rviz
+sudo poweroff 
+roslaunch uvc_camera
+ls
+vim untitled.m
+sudo apt install vim
+ls
+rm untitled.m~ 
+vim untitled.m 
+source ~/.bashrc 
+vim ~/.bashrc
+vim ~/.bashrc 
+source ~/.bashrc 
+roscore 
+ls
+vim ~/.bashrc 
+ls
+roscore 
+vim ~/.bashrc 
+roscore 
+chromium-browser 
+bg
+exit
+rostopic list
+cd catkin_ws/
+ls
+source devel/setup.bash 
+ls
+catkin build
+catkin_make
+sudo apt install catkin 
+sudo apt install python-caktin-pkg
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu `lsb_release -sc` main" > /etc/apt/sources.list.d/ros-latest.list'
+wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install python-catkin-tools
+ls
+catkin build
+ls
+cd ..
+rm -rf catkin_ws/
+cd /media/up/CCSA_X64FRE_EN-US_DV5/
+ls
+cp -r catkin_ws2/ ~/
+cd 
+ls
+mv -i catkin_ws2 catkin_ws/
+ls
+cd catkin_ws/
+ls
+catkin build
+mv -i build/ devel/ ../
+ls
+catkin build
+ls
+sudo apt install ros-kinetic-camera-info-manager
+catkin build
+ls
+rm -rf build/ devel/ logs/
+catkin_make
+sudo apt install chromium-browser
+ls
+ls
+rm build/ devel/ catkin_ws/
+rm -rf build/ devel/ catkin_ws/
+ls
+mkdir ~/catkin_ws/src -p
+ls
+cd catkin_ws/src/
+cd see3cam
+git checkout tara_v1.2
+sudo apt-get install ros-kinetic-camera-info-manager
+sudo apt autoremove 
+sudo apt-get install libudev-dev
+sudo apt upgrade 
+cd ../..
+catkin_make
+sudo poweroff 
+ls
+reboot 
+roscore 
+printenv | grep ROS
+vim ~/.bashrc
+source ~/.bashrc
+printenv | grep ROS
+roscore 
+vim ~/.bashrc
+source ~/.bashrc
+roscore 
+source /opt/ros/kinetic/setup.bash
+roscore 
+sudo rosdep init
+rosdep update
+roslaunch uvc_camera tara_launch.launch 
+printenv | grep ROS
+vim ~/.bashrc 
+roscore 
+vim ~/.bashrc 
+rosrun rviz rviz
+vim ~/.bashrc 
+source ~/.bashrc 
+rosrun rviz rviz
+ranger
+vim catkin_ws/src/CMakeLists.txt 
+roscore 
