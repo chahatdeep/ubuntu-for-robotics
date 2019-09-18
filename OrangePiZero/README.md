@@ -3,7 +3,7 @@
 - Or download armbian from [here](https://www.armbian.com/orange-pi-zero-2-h5/).
 ***
 # Powering orangepi
-Provide power through **5V/GND** pins on the **26 pin** header. Voltage drops affecting stability are likely to happen if you are powering through USB
+Provide power through **5V/GND** pins on the **26 pin** header. Voltage drops affecting stability are likely to happen if you are powering through USB.
 ***
 # After Installation:
 ## Installing Tensorflow-1.1.0 on Orange Pi Zero:
