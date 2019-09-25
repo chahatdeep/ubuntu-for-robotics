@@ -1,6 +1,7 @@
 # Up-Board 16.04 Setup Instructions
 
 * Note that Up-board has x86 architecture. That means, everything will be installed the same way as your Laptop/PC.*
+* Make sure you are connected to Internet, either through WiFi or LAN.
 
 1. First: enable Main, Universe, Restricted and Multiverse repositories from 'Softwares & Updates'. If you are new to Ubuntu, refer this [link](https://help.ubuntu.com/community/Repositories/Ubuntu)
 2. `sudo apt update`
