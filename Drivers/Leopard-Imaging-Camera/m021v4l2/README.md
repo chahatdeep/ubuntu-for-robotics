@@ -35,6 +35,7 @@ cap = Capture800x460()
 sudo apt-get install libv4l-dev
 sudo apt-get install libusb-1.0-0-dev
 sudo apt-get install libudev-dev
+sudo -H pip3 install libopencv
 sudo python3 setup.py install
 ./run-capture
 #make cap
