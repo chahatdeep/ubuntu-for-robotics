@@ -32,6 +32,9 @@ cap = Capture800x460()
 
 - To run the **Python3** demo program, cd to <tt>opencv/python3</tt> and do
 ```
+sudo apt-get install libv4l-dev
+sudo apt-get install libusb-1.0-0-dev
+sudo apt-get install libudev-dev
 sudo python3 setup.py install
 ./run-capture
 #make cap
