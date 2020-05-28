@@ -47,12 +47,19 @@ sudo python setup.py install
 ./run-capture
 ```
 
+
 - To run on **ROS-Kinetic**, cd to <tt>opencv/python</tt> and do
 Install `ros-cv-bridge` nd `rviz`:
 ```
 sudo apt install ros-kinetic-cv-bridge 
 sudo apt install ros-kinetic-rviz
 ```
+
+- If using `ssh`, you might need to do this:
+```
+sudo apt install -y mesa-utils libgl1-mesa-glx
+```
+
 
 ```
 ./ros-capture
