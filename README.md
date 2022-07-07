@@ -1,7 +1,7 @@
 # ubuntu-for-robotics
 
 ## News: 
-- October 25: Added Support for Tensorflow v1.11, CUDA v9.0 and cudnn v7.3
+- October 25: Added Support for Tensorflow v1.11, CUDA v9.0 and cudnn v7.3.
 
 ## About:
 
